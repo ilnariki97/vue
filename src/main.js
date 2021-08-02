@@ -1,15 +1,14 @@
-// import Vue from 'vue'
-// import App from './App.vue'
-//
-// Vue.config.productionTip = false
-//
-// new Vue({
-//   render: h => h(App),
-// }).$mount('#app')
 const App={
     data () {
         return{
-            counter:0
+            placeholderString:'Введите название заметки',
+            title:'Список заметок',
+            inputValue:'',
+        }
+    },
+    methods:{
+        inputChangeHandler(event){
+            this.inputValue=event.target.value
         }
     }
 }
